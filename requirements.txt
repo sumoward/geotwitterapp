@@ -1,0 +1,9 @@
+tweepy==3.6.0
+virtualenv==16.0.0
+bottle==0.12.13
+WTForms==2.2.1
+gmplot==1.2.0
+WTForms-Test==0.1.1
+
+
+

@@ -1,0 +1,50 @@
+
+Backend code challenge
+
+Requirements
+Consume geo tweets from the Twitter stream API
+Use Python or Ruby
+Make nearby tweets available when a user provides coordinates
+Make a basic UI
+Use best practices
+
+Bonus:
+Render nearby tweets on a map
+Make sure to be thorough and document everything. Please include links to all your code.
+This challenge should represent approximately 4 to 6 hours of work.
+
+
+    # you will need to add your own keys for twitter api in app.py
+    consumer_key = ''
+    consumer_secret = ''
+    access_token = ''
+    access_token_secret = ''
+
+	requirements can be found in requirements.txt
+	run the app with:
+	python3 app.py
+
+I completed the test using python 3.5. I normally work with ruby so i decided to refresh my python knowledge. The code should all meet pep 8.
+
+As I took a minimalist approach Bottle was ideal as a web framework.
+Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a single file module and has no dependencies other than the Python Standard Library.
+https://bottlepy.org/docs/dev/index.html
+Bottle comes with a fast, powerful and easy to learn built-in template engine called SimpleTemplate. This allowed me a bare bones ui without any use of bootstrap.
+
+From the get go I decided to implement a map. While this was interesting it led to a number of issues.
+
+Twitter is returning a reduced number of tweets with coordinates, this often means no tweets have coordinates in a sample. A work around using the place field was not possible in the alloted time.
+https://twittercommunity.com/t/twitter-search-api-always-return-geo-null/66166
+
+https://stackoverflow.com/questions/50211298/logstash-twitter-input-no-coordinates
+
+In this case the app merely provides the tweeter and their tweet.
+
+The map library gmplot is bugging out on windows.
+
+https://stackoverflow.com/questions/49962991/gmplot-google-maps-html-output-not-showing-markers-heatmap
+https://github.com/vgm64/gmplot/issues/63
+
+
+
+

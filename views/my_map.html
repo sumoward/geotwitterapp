@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(23.000000, 3.000000);
+		var myOptions = {
+			zoom: 8,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(3.847217, 23.036045);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'852dcca171c1d88620855ed97dd14d3637f1850be7f43e0258b1c71cbb53be4a4ffc67b3069e7a3c9e0a18ace52a74bf9569511759e7d8fc5ee\xe2\x80\xa6 https://t.co/dxc79JHmc8'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(2.156593, 22.653382);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'56addefc079979e2200a0ed9677f36fbddf851f27fda8836a23fa74e301c590987bce7d7a9c2f3dc61f700a38627b82c442aae66b5535a1a2fd\xe2\x80\xa6 https://t.co/qQ1uDsi24w'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(4.986146, 22.871344);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'edf82c6479b60ac120e52b161da38ed742c4739c33eb9b6ee997f7a5b2c85f47a781e39579afe9ddbfb53471bcb68b0104589dd6fc58a199785\xe2\x80\xa6 https://t.co/iwdbrGCASG'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(2.073402, 22.296308);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'99e341691ccb99f2207c24b8bc9d34f14cd2f7235af393e14d971af939a0bcfefe326b86eda5222e16c04dc89c1ddea60ca613701958153a09b\xe2\x80\xa6 https://t.co/uPp4FWFYF0'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(4.470345, 22.402618);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'4d7d08d5577a23872058bf1de674c2b4a136ed1199eec6ee1f47f85a5042639b3d2fdf0a79954a1c3ae919787aba3aa2a44d7378cee00f9c570\xe2\x80\xa6 https://t.co/7mnTK6h0jG'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(1.979060, 22.399522);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'0bc3eccf0082060420c679a8df33da29576ce01f86d8db7df67af4847e9960db1e7e47b5bfe81ef1146f63060c6ebebe0e8e0c7a9a5130673ca\xe2\x80\xa6 https://t.co/RoCTy6lcZl'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(2.221027, 23.478207);
+		var img = new google.maps.MarkerImage('/usr/local/lib/python3.6/dist-packages/gmplot/markers/6495ED.png');
+		var marker = new google.maps.Marker({
+		title: "b'084ed38b280955b12032d1bfe8f7d70a6889bbd6cbaec04dc6329011d63341b6e76cdbe3fb59630db8ff09f837f75fefa4212bf76412159498f\xe2\x80\xa6 https://t.co/DDKE8hF735'",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
